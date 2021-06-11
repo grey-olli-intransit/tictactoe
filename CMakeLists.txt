@@ -1,0 +1,5 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
+add_compile_options(-Wall -std=c++11)
+PROJECT(krestiki_noliki)
+add_executable(krestiki-noliki src/TicTacToe.cpp)
+include_directories(krestiki-noliki PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
