@@ -74,7 +74,10 @@ int main(int argc, const char** argv) { // 1TBS
         std::cin >> answer;
         // y, yes, yep, yay, yeah, Y, YES, YEP
         transform(answer.begin(), answer.end(), answer.begin(), ::tolower);
-        if (answer.find('y') != 0) break;
+        if (answer.find('y') != 0)
+		break;
+	else
+		free(f.map); // fix #2
     }
     free(f.map); // fix #2
     
